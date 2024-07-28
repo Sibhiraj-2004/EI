@@ -135,8 +135,18 @@ The Virtual Classroom application is a terminal-based system designed to manage 
 ### Exception Handling
 Custom exceptions are used to handle specific errors such as duplicate classrooms, non-existent classrooms, or unregistered students.
 
-### Main Class
-Provides a user interface through the terminal where commands are entered and processed.
+## Design Patterns Used
+### Singleton Pattern
+- **Used In**: `ClassroomManager`
+- **Description**: Ensures that there is only one instance of the `ClassroomManager` class throughout the application. This pattern provides a global point of access to the `ClassroomManager` instance and controls its creation.
+
+### Command Pattern
+- **Used In**: `AddClassroomCommand`, `AddStudentCommand`, `ScheduleAssignmentCommand`, `SubmitAssignmentCommand`, `ListStudentsCommand`, `RemoveClassroomCommand`
+- **Description**: Encapsulates a request as an object, thereby allowing parameterization of clients with different requests, queuing of requests, and logging of the requests. It decouples the sender of a request from the receiver, allowing for easier management and extensibility of commands.
+
+### Factory Pattern
+- **Used In**: Not explicitly used in the current implementation but can be employed for creating instances of commands or entities if required.
+- **Description**: Provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. Useful for creating various command objects or entities based on dynamic input.
 
 ## What It Solves
 The Virtual Classroom application provides a structured way to manage classroom operations, making it easier for administrators and teachers to handle tasks such as scheduling, student management, and assignment tracking. It streamlines administrative tasks and ensures that all relevant data is organized and accessible.
@@ -153,5 +163,4 @@ The Virtual Classroom application provides a structured way to manage classroom 
 
    ```sh
    javac -d bin src/main/java/com/example/virtualclassroom/*.java src/main/java/com/example/virtualclassroom/commands/*.java src/main/java/com/example/virtualclassroom/exceptions/*.java src/main/java/com/example/virtualclassroom/entities/*.java
-
 
