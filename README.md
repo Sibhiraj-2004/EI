@@ -104,3 +104,54 @@ It provides a flexible and extensible way to manage and enhance notifications, a
 ### Where It Is Used
 This system can be used in smart home applications, alert management systems, and any application requiring customizable notification features.
 
+# Virtual Classroom
+
+## Use Case Name
+Virtual Classroom
+
+## Use Case Description
+The Virtual Classroom application is a terminal-based system designed to manage classroom operations, including class scheduling, student enrollment, assignment management, and attendance tracking. The system provides an efficient and user-friendly way to handle various aspects of a classroom environment.
+
+## Logic of the Code
+### ClassroomManager Class
+- **Singleton Pattern**: Ensures only one instance of the `ClassroomManager` exists.
+- **Classroom Management**: Handles adding and removing classrooms, listing all available classrooms.
+- **Student Management**: Manages student enrollment in classrooms.
+- **Assignment Management**: Schedules and tracks assignments, handles submission of assignments.
+
+### Entities
+- **Classroom**: Represents a classroom with a name, a list of students, and assignments. Provides methods to add students, assign assignments, and retrieve student information.
+- **Student**: Represents a student with an ID and methods to submit assignments.
+- **Assignment**: Represents an assignment with details and status.
+
+### Commands
+- **AddClassroomCommand**: Adds a new classroom.
+- **AddStudentCommand**: Enrolls a student in a classroom.
+- **ScheduleAssignmentCommand**: Schedules an assignment for a classroom.
+- **SubmitAssignmentCommand**: Allows a student to submit an assignment.
+- **ListStudentsCommand**: Lists all students in a specific classroom.
+- **RemoveClassroomCommand**: Removes a classroom from the system.
+
+### Exception Handling
+Custom exceptions are used to handle specific errors such as duplicate classrooms, non-existent classrooms, or unregistered students.
+
+### Main Class
+Provides a user interface through the terminal where commands are entered and processed.
+
+## What It Solves
+The Virtual Classroom application provides a structured way to manage classroom operations, making it easier for administrators and teachers to handle tasks such as scheduling, student management, and assignment tracking. It streamlines administrative tasks and ensures that all relevant data is organized and accessible.
+
+## Where It Is Used
+- **Educational Institutions**: To manage and monitor classroom activities, including student enrollments and assignment submissions.
+- **Online Learning Platforms**: To provide administrative functionality for virtual classrooms.
+- **Training Centers**: To handle scheduling, assignments, and student management for various training programs.
+
+## How to Run the Application
+
+1. **Compile the Code**:
+   Ensure that you have Java Development Kit (JDK) installed. Use the following command to compile the code:
+
+   ```sh
+   javac -d bin src/main/java/com/example/virtualclassroom/*.java src/main/java/com/example/virtualclassroom/commands/*.java src/main/java/com/example/virtualclassroom/exceptions/*.java src/main/java/com/example/virtualclassroom/entities/*.java
+
+
