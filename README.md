@@ -106,55 +106,55 @@ This system can be used in smart home applications, alert management systems, an
 
 ## Design Patterns Used
 
-### 1. Weather Alert System - Decorator Pattern
+### 1. Weather Alert System - Observer Pattern
+**Description:**  
+The Observer Pattern is used to define a one-to-many dependency between objects. In the Weather Alert System, this pattern allows multiple observer objects (e.g., alert systems) to be notified and updated automatically when there is a change in the weather conditions (the subject). This decouples the weather monitoring logic from the alert notification logic, allowing for flexible and dynamic updates.
 
-**Description**: The Decorator Pattern is used to add additional responsibilities to objects dynamically. In the Weather Alert System, decorators enhance the base notification system with features like alert priorities or different notification methods (e.g., email, SMS). This pattern allows for flexible and modular enhancements without modifying the core notification logic.
-
-**Benefits**:
-- **Flexibility**: Easily add or change notification features without altering existing code.
-- **Modularity**: Enhancements are added in a modular fashion, promoting code reuse and maintainability.
+**Benefits:**
+- **Decoupling:** Separates the core weather monitoring system from the alert notification system.
+- **Dynamic Updates:** Observers are automatically notified of changes, ensuring up-to-date alerts.
+- **Scalability:** Easily add or remove observers without modifying the core system.
 
 ### 2. Lighting Control System - Strategy Pattern
+**Description:**  
+The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. In the Adaptive Lighting Control System, different lighting strategies (e.g., bright, dim) are encapsulated as separate classes. The system can switch between these strategies dynamically based on user preferences or environmental conditions.
 
-**Description**: The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. In the Adaptive Lighting Control System, different lighting strategies (e.g., bright, dim) are encapsulated as separate classes. The system can switch between these strategies dynamically based on user preferences or environmental conditions.
-
-**Benefits**:
-- **Flexibility**: Easily switch between different algorithms (lighting strategies) without changing the code that uses them.
-- **Extensibility**: New strategies can be added without modifying existing code.
+**Benefits:**
+- **Flexibility:** Easily switch between different algorithms (lighting strategies) without changing the code that uses them.
+- **Extensibility:** New strategies can be added without modifying existing code.
 
 ### 3. Meal Builder System - Builder Pattern
+**Description:**  
+The Builder Pattern is used to construct a complex object step by step. In the Custom Meal Builder, the pattern helps in assembling a meal with various customizable options such as size, bread type, toppings, and sauce. The MealBuilder class provides a fluent interface for setting different components of the meal.
 
-**Description**: The Builder Pattern is used to construct a complex object step by step. In the Custom Meal Builder, this pattern helps in assembling a meal with various customizable options such as size, bread type, toppings, and sauce. The MealBuilder class provides a fluent interface for setting different components of the meal.
-
-**Benefits**:
-- **Encapsulation**: Separates the construction of a complex object from its representation.
-- **Flexibility**: Allows for customization of the meal without changing the underlying construction process.
+**Benefits:**
+- **Encapsulation:** Separates the construction of a complex object from its representation.
+- **Flexibility:** Allows for customization of the meal without changing the underlying construction process.
 
 ### 4. Smart Device Factory - Factory Pattern
+**Description:**  
+The Factory Pattern defines an interface for creating objects but allows subclasses to alter the type of objects that will be created. In the Smart Device Factory, this pattern is used to create different types of smart devices (e.g., thermostats, lights, cameras) based on user specifications.
 
-**Description**: The Factory Pattern defines an interface for creating objects but allows subclasses to alter the type of objects that will be created. In the Smart Device Factory, this pattern is used to create different types of smart devices (e.g., thermostats, lights, cameras) based on user specifications.
-
-**Benefits**:
-- **Encapsulation**: Hides the instantiation logic of devices, promoting a clean and easy-to-maintain codebase.
-- **Extensibility**: New device types can be added without changing the existing factory code.
+**Benefits:**
+- **Encapsulation:** Hides the instantiation logic of devices, promoting a clean and easy-to-maintain codebase.
+- **Extensibility:** New device types can be added without changing the existing factory code.
 
 ### 5. Corporate Hierarchy System - Composite and Iterator Patterns
+**Description:**  
+- **Composite Pattern:** Used to compose objects into tree structures to represent part-whole hierarchies. In the Corporate Hierarchy System, the pattern manages employees and managers, allowing for a flexible structure that can represent complex organizational hierarchies.
+- **Iterator Pattern:** Provides a way to access elements of a collection sequentially without exposing its underlying representation. This pattern is used to traverse the hierarchical structure of employees and managers.
 
-**Description**:
-- **Composite Pattern**: Used to compose objects into tree structures to represent part-whole hierarchies. In the Corporate Hierarchy System, the pattern manages employees and managers, allowing for a flexible structure that can represent complex organizational hierarchies.
-- **Iterator Pattern**: Provides a way to access elements of a collection sequentially without exposing its underlying representation. This pattern is used to traverse the hierarchical structure of employees and managers.
-
-**Benefits**:
-- **Flexibility**: Allows for a flexible and recursive representation of hierarchical structures.
-- **Traversal**: Provides a standard way to access and iterate over elements in the hierarchy.
+**Benefits:**
+- **Flexibility:** Allows for a flexible and recursive representation of hierarchical structures.
+- **Traversal:** Provides a standard way to access and iterate over elements in the hierarchy.
 
 ### 6. Smart Home Notification System - Decorator Pattern
+**Description:**  
+Similar to the Weather Alert System, the Decorator Pattern is used here to dynamically add features to a base notification system. The system allows for adding features such as sound alerts, email notifications, and mobile app notifications as decorators to the core notification functionality.
 
-**Description**: Similar to the Weather Alert System, the Decorator Pattern is used here to dynamically add features to a base notification system. The system allows for adding features such as sound alerts, email notifications, and mobile app notifications as decorators to the core notification functionality.
-
-**Benefits**:
-- **Flexibility**: Dynamically add or modify features without changing the core notification logic.
-- **Modularity**: Enhancements are added in a modular fashion, allowing for easy updates and maintenance.
+**Benefits:**
+- **Flexibility:** Dynamically add or modify features without changing the core notification logic.
+- **Modularity:** Enhancements are added in a modular fashion, allowing for easy updates and maintenance.
 
 # Virtual Classroom
 
