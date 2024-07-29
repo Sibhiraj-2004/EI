@@ -38,6 +38,9 @@ This system provides flexibility in managing lighting conditions, allowing for a
 ### Where It Is Used
 This system can be integrated into smart home automation systems, office environments, or any application requiring dynamic lighting adjustments.
 
+![Screenshot (141)](https://github.com/user-attachments/assets/c9135818-3ef3-46f3-b8a4-2194f5bd91bf)
+
+
 ## 3. Meal Builder System
 
 ### Use Case Name
@@ -54,6 +57,8 @@ It allows users to build a meal according to their preferences, providing a flex
 
 ### Where It Is Used
 This system is ideal for fast-food restaurants, meal delivery services, and any application that requires custom meal preparation.
+
+![Screenshot (140)](https://github.com/user-attachments/assets/a8209ecb-ff77-4bba-aa4f-857e77b22907)
 
 ## 4. Smart Device Factory
 
@@ -72,6 +77,8 @@ It simplifies the creation of various smart devices by centralizing the creation
 ### Where It Is Used
 This factory can be used in smart home systems, IoT applications, and any system that requires the creation of different types of smart devices.
 
+![Screenshot (142)](https://github.com/user-attachments/assets/92d75202-1fd2-4cd1-bbac-4e59fbf73cc6)
+
 ## 5. Corporate Hierarchy System
 
 ### Use Case Name
@@ -89,6 +96,8 @@ It provides a structured way to manage and view corporate hierarchies, making it
 ### Where It Is Used
 This system can be used in HR management software, organizational chart applications, and any application requiring management of employee hierarchies.
 
+![Screenshot (138)](https://github.com/user-attachments/assets/c53f6dc7-5691-4d01-a8a9-649cdc9338d8)
+
 ## 6. Smart Home Notification System
 
 ### Use Case Name
@@ -105,6 +114,8 @@ It provides a flexible and extensible way to manage and enhance notifications, a
 
 ### Where It Is Used
 This system can be used in smart home applications, alert management systems, and any application requiring customizable notification features.
+
+![Screenshot (139)](https://github.com/user-attachments/assets/3424be9d-4cfb-49ac-bbcf-8dcc89c0796e)
 
 ## Design Patterns Used
 
