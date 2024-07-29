@@ -19,6 +19,8 @@ The system provides a flexible way to manage and deliver weather alerts. It allo
 ### Where It Is Used
 This system can be used in weather apps, smart home systems, or any application requiring real-time weather notifications.
 
+![Screenshot (137)](https://github.com/user-attachments/assets/8d7a32dd-0148-4f2e-9a9a-23dad873bbeb)
+
 ## 2. Lighting Control System
 
 ### Use Case Name
