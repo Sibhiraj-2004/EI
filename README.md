@@ -250,4 +250,6 @@ Provides a structured approach to manage virtual classrooms, student enrollment,
 ### Where It Is Used
 Educational platforms, online learning environments, and any system that requires management of virtual classes and assignments.
 
+![Screenshot (143)](https://github.com/user-attachments/assets/81ccf430-c47f-4689-851f-ae4e875e2140)
+
 
