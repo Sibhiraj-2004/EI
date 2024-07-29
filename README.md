@@ -2,6 +2,8 @@
 
 This repository contains various projects demonstrating different design patterns and practical implementations. Each project showcases a specific pattern or concept in software design. Below are the details for each project.
 
+## Excercise 1
+
 ## 1. Weather Alert System
 
 ### Use Case Name
@@ -228,4 +230,24 @@ The Virtual Classroom application provides a structured way to manage classroom 
 
    ```sh
    javac -d bin src/main/java/com/example/virtualclassroom/*.java src/main/java/com/example/virtualclassroom/commands/*.java src/main/java/com/example/virtualclassroom/exceptions/*.java src/main/java/com/example/virtualclassroom/entities/*.java
+
+## Excercise 2
+
+## 1. Virtual Classroom Manager
+
+### Use Case Name
+Virtual Classroom Manager
+
+### Use Case Description
+A terminal-based application for managing virtual classrooms. It handles class scheduling, student enrollment, and assignment submissions. Users can add or remove classrooms, enroll students, and manage assignments.
+
+### Logic of the Code
+The system uses the Observer pattern to handle notifications related to class schedules and assignments. It includes a `ClassroomManager` class for managing classrooms and students, and employs design patterns like Singleton for managing unique instances of classroom and student data.
+
+### What It Solves
+Provides a structured approach to manage virtual classrooms, student enrollment, and assignments efficiently. It supports easy management and updates to classroom details and student information.
+
+### Where It Is Used
+Educational platforms, online learning environments, and any system that requires management of virtual classes and assignments.
+
 
